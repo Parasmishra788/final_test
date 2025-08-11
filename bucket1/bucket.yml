@@ -1,6 +1,5 @@
 flows:
-  1e0e252b-89e5-4c76-b8e7-e2a25bfcd022: {ver: 4, file: Flow1.snapshot, comments: count
-      text processor added, author: anonymous, created: 1754304046009, flowName: Flow1,
-    flowDesc: ''}
+  1e0e252b-89e5-4c76-b8e7-e2a25bfcd022: {ver: 5, file: Flow1.snapshot, comments: covertprotobuf
+      added, author: anonymous, created: 1754928549658, flowName: Flow1, flowDesc: ''}
 layoutVer: 1
 bucketId: d430ef74-ace8-44b4-9367-916a9fc1bb66

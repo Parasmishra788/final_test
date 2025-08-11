@@ -484,6 +484,59 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
+            "artifact" : "nifi-cdf-grpc-nar",
+            "group" : "com.cloudera",
+            "version" : "1.28.1.2.1.7.2003-5"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "6d101f59-f18c-3bf4-93de-a04c29f4dbe2",
+          "identifier" : "a6daa085-1340-3ebd-9848-935d0d1c4ec7",
+          "instanceIdentifier" : "99e43c73-0198-1000-ffff-fffff1e57a9d",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ConvertProtobuf",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 232.0,
+            "y" : 352.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : {
+            "message-type" : {
+              "displayName" : "Message Type",
+              "identifiesControllerService" : false,
+              "name" : "message-type",
+              "sensitive" : false
+            },
+            "output-field" : {
+              "displayName" : "Output Field",
+              "identifiesControllerService" : false,
+              "name" : "output-field",
+              "sensitive" : false
+            },
+            "proto-directory" : {
+              "displayName" : "Proto Directory",
+              "identifiesControllerService" : false,
+              "name" : "proto-directory",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "com.cloudera.nifi.processors.grpc.ConvertProtobuf",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
             "artifact" : "nifi-hadoop-nar",
             "group" : "org.apache.nifi",
             "version" : "1.28.1.2.1.7.2003-5"
@@ -539,7 +592,7 @@
               "name" : "Additional Classpath Resources",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "FILE", "DIRECTORY" ]
+                "resourceTypes" : [ "DIRECTORY", "FILE" ]
               },
               "sensitive" : false
             },
