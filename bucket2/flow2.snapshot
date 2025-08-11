@@ -435,6 +435,94 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "083aab33-37bf-3ae0-9c50-8daf40617e46",
+          "identifier" : "9864bc94-edf4-3dbe-a9dc-4ad1db4dea85",
+          "instanceIdentifier" : "99e83f3d-0198-1000-ffff-ffffff0b4cd1",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LookupRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 330.0,
+            "y" : 149.0
+          },
+          "properties" : {
+            "result-contents" : "insert-entire-record",
+            "routing-strategy" : "route-to-success",
+            "record-path-lookup-miss-result-cache-size" : "0",
+            "record-update-strategy" : "use-property"
+          },
+          "propertyDescriptors" : {
+            "result-contents" : {
+              "displayName" : "Record Result Contents",
+              "identifiesControllerService" : false,
+              "name" : "result-contents",
+              "sensitive" : false
+            },
+            "routing-strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "routing-strategy",
+              "sensitive" : false
+            },
+            "record-path-lookup-miss-result-cache-size" : {
+              "displayName" : "Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "record-path-lookup-miss-result-cache-size",
+              "sensitive" : false
+            },
+            "result-record-path" : {
+              "displayName" : "Result RecordPath",
+              "identifiesControllerService" : false,
+              "name" : "result-record-path",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "lookup-service" : {
+              "displayName" : "Lookup Service",
+              "identifiesControllerService" : true,
+              "name" : "lookup-service",
+              "sensitive" : false
+            },
+            "record-update-strategy" : {
+              "displayName" : "Record Update Strategy",
+              "identifiesControllerService" : false,
+              "name" : "record-update-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LookupRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.28.1.2.1.7.2003-5"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "083aab33-37bf-3ae0-9c50-8daf40617e46",
           "identifier" : "59c9500b-0752-3742-846c-24184f5780b8",
           "instanceIdentifier" : "6f9cb82b-0198-1000-ffff-ffff8d81b968",
           "maxBackoffPeriod" : "10 mins",
